@@ -15,7 +15,6 @@ end
 end
 
 newary = Array.new
-=> []
 newary = Array(1..1000)
 newary.each do |x|
    fizzbuzz(x)
