@@ -13,3 +13,5 @@ end
 building1 = Building.new(4, 4, 3, "metal", "blue", true)
 
 building2 = Building.new(10, 4, 1, "wood", "orange", false)
+
+building3 = Building.new(5,7,1,"metal", ["blue","grey"], true)
