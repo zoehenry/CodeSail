@@ -21,6 +21,10 @@ class Hospital < Building
   def make_siren_sound
     puts "BLEEP BLEEP BLEEP"
   end
+
+  def self.open_doors
+    puts "woosh"
+  end
 end
 
 yalehealth = Hospital.new(20,50,4,5,["glass","metal"], "white", true)
