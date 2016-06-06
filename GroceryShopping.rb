@@ -1,19 +1,26 @@
 require "csv"
-csv = CSV.read("/Users/zoehenry/Desktop/CodeSail_2016/GroceryPractice.csv", headers:true)
+csv = CSV.read("/Users/zoehenry/Desktop/CodeSail_2016/Repos/CodeSail/GroceryPractice.csv", headers:true)
 string_csv = CSV.parse("groceries", headers:true)
 
+puts "=" * 30
+puts "Welcome to the Store!"
+puts "=" * 30
 
 puts "Here are the items and their prices:"
 
 puts csv.first(8)
 
-puts "What items would you like to buy? (You can only buy one of each)"
+puts "=" * 30
+
+puts "What items would you like to buy? (Type each item with only a space in between)"
 
 user_choices = gets.chomp.strip.downcase
 
 list = user_choices.split(" ")
 
-puts "How many of each?"
+puts "=" * 30
+
+puts "How many of each? (Type each quantiy with only a space in between in corresponding order to items)"
 
 quantity = gets.chomp.strip
 
@@ -37,4 +44,6 @@ prices_of_food.each do |price|
   total_price += price
 end
 
-puts "Your total is $" + total_price.to_s
+puts "=" * 30
+puts "Your total is $" + total_price.to_s + ". Thank you for shopping."
+puts "=" * 30
