@@ -1,0 +1,8 @@
+<h1> Your Recommendations: </h1>
+
+<% @recommendations.each do |restaurant| %>
+
+  <%= restaurant.name %>, <%= restaurant.food_type %>
+  </br>
+
+<% end %>

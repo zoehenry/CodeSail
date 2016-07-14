@@ -1,0 +1,20 @@
+<head>
+  <link rel="stylesheet" href="my_css.css"/>
+</head>
+
+<h1>
+  <%=@date%>
+</h1>
+
+<div class = "container">
+  <p>
+  We are learning about
+  <% @newtopic.each do |topic| %>
+    <%= topic %>,
+  <%end%>
+  in class today.
+</p>
+<p>
+  <a href="/">Home</a>
+</p>
+</div>

@@ -1,0 +1,2 @@
+module HamlPreviewHelper
+end

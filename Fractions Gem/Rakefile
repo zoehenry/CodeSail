@@ -1,0 +1,7 @@
+# Rakefile
+desc "Run tests"
+task :default => :test
+
+task :test do
+  ruby "test/test_fractions.rb"
+end

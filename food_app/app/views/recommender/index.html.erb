@@ -1,0 +1,12 @@
+<h1>Recommender#index</h1>
+<p>Find me in app/views/recommender/index.html.erb</p>
+
+<h1>What mood are you in?</h1>
+
+<%= form_tag '/recommend_me', method: 'POST' do %>
+  <%= text_field_tag 'mood' %>
+  <%= submit_tag %>
+<% end %>
+
+<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+<%= link_to "Sign out", destroy_user_session_path, method: 'delete' %>

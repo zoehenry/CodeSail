@@ -1,0 +1,17 @@
+<h1>ApplicationFroms#edit</h1>
+<p>Find me in app/views/application_froms/edit.html.erb</p>
+
+<%= form_for @application_from do |f| %>
+  <%= f.label :first_name %>:
+  <%= f.text_field :first_name %><br />
+
+  <%= f.label :last_name %>:
+  <%= f.text_field :last_name %><br />
+
+  <%= f.label :special_power %>:
+  <%= f.text_field :special_power %><br />
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Delete this entry", application_from_path(@application_from.id), method: 'delete' %>

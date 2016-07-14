@@ -1,0 +1,15 @@
+<h1>Voters#new</h1>
+<p>Find me in app/views/voters/new.html.erb</p>
+
+<%= form_for @voter do |f| %>
+  <%= f.label :first_name %>:
+  <%= f.text_field :first_name %><br />
+
+  <%= f.label :last_name %>:
+  <%= f.text_field :last_name %><br />
+
+  <%= f.label :state %>:
+  <%= f.text_field :state %><br />
+
+  <%= f.submit %>
+<% end %>

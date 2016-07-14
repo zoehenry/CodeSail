@@ -1,0 +1,28 @@
+<head>
+  <link rel="stylesheet" href="my_css.css"/>
+</head>
+
+<h1>
+  About Me
+</h1>
+<body>
+<div class = "container">
+  <img src= "zoe.jpg">
+  <p>
+    My name is <%=@name %>.  I am from <%=@hometown%>.
+    I am <%=@age%> years old. My favorite color is <%=@favoritecolor%>.
+    <p>
+    My hobbies include:
+    </p>
+    <% @hobbies.each do |hobby| %>
+    <p>
+      <%= hobby %>
+    </p>
+    <%end%>
+  </p>
+  <p>
+    <a href="/abouthometown">About My Hometown</a>
+  </p>
+    <a href="/">Home</a>
+</div>
+</body>
